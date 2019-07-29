@@ -32,5 +32,15 @@ else
 	echo "$2 is greater than $1"
 fi
 
+#or
+if [[ $1 -gt 0 || $2 -gt 0 ]]; then
+	echo "Either $1 or $2 is greater than 0"
+fi
+
+#and
+if [[ $2 -gt 0 && $1 -gt 0 ]]; then
+	echo "Both $1 and $2 are greater than 0"
+fi
+
 exit 0
 
